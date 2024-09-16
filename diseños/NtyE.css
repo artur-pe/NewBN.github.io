@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: auto; /* Para evitar scroll mientras salen los emojis */
+  }
+
+  .emoji {
+    position: fixed;
+    font-size: 2.5rem; /* Tamaño del emoji */
+    animation: fly 3s ease-in-out forwards;
+  }
+
+  /* Animación para que los emojis se desplacen */
+  @keyframes fly {
+    0% {
+      transform: translateX(100vw); /* Sale desde la derecha */
+    }
+    50% {
+      transform: translateX(-50vw); /* Cruza la pantalla */
+    }
+    100% {
+      transform: translateX(-100vw); /* Desaparece por la izquierda */
+    }
+  }
+
+.img-anv{
+    width: 700px;
+    height: 900px;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
